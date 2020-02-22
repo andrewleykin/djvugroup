@@ -1,0 +1,10 @@
+section.features
+    .container
+        .features__content
+            ul.features__list
+                each item in content.features.list    
+                    li.features__item
+                        .features__img-wrp
+                            +icon(item["src"])
+                        .features__name= item['name']
+                        .features__text= item['text'] 

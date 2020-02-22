@@ -1,0 +1,28 @@
+section.news
+    .container
+        .news__company
+            h2.news__title= content.news.company.title
+            .news__company-wrp
+                ul.news__company-list
+                    each item, index in content.news.company.list
+                        if (index + 1) % 2 == 1
+                            li.news__company-item
+                                span.news__data= item['data']
+                                .news__name= item['name']
+                                span.news__text= item['text']                        
+                ul.news__company-list
+                    each item, index in content.news.company.list
+                        if (index + 1) % 2 == 0   
+                            li.news__company-item
+                                span.news__data= item['data']
+                                .news__name= item['name']
+                                span.news__text= item['text']                        
+        .news__events
+            .news__events-wrp
+                h2.news__title= content.news.events.title
+                ul.news__events-list
+                    each item in content.news.events.list
+                        li.news__event-item
+                            span.news__data= item['data']
+                            .news__name= item['name']
+                            span.news__text= item['text'] 

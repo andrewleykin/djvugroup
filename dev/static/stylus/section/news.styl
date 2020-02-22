@@ -1,0 +1,173 @@
+.news .container
+    padding-top 80px
+    display flex
+    position relative
+    background: url(../img/content/tank.png) no-repeat
+    background-position: 430px 64px
+    &:after
+        content:""
+        height 100%
+        width 1px
+        background-color: #000
+        position absolute
+        top 0
+        left 1171px
+        @media(max-width: $breakpoint-xl)
+            display none 
+    @media(max-width: $breakpoint-xl)
+        padding-top 70px
+        background-position: 300px 80px
+        justify-content: space-between
+    @media(max-width: $breakpoint-l)
+        padding-top 60px
+        background-size: 40%
+        background-position: 200px 100px
+        justify-content: space-around
+        background: none
+    @media(max-width: $breakpoint-m)
+        justify-content: space-between
+    @media(max-width: $breakpoint-s)
+        padding-top 30px
+        flex-direction: column
+
+.news__company-wrp
+    display flex
+    justify-content: space-between
+    width 100%
+
+.news__company
+    display flex
+    flex-direction: column
+    min-width 1100px
+    max-width: 1100px
+    margin-right 70px
+    flex 0 0 
+    @media(max-width: $breakpoint-xl)
+        margin-right 40px
+        min-width 800px
+        max-width: 800px
+    @media(max-width: $breakpoint-l)
+        margin-right 30px
+        min-width 400px
+        max-width: 400px
+    @media(max-width: $breakpoint-m)
+        min-width 250px
+        max-width 250px 
+    @media(max-width: $breakpoint-s)
+        min-width 100%
+        max-width: 100%
+.news__title
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 700
+    letter-spacing: 1.2px;
+    margin-bottom 112px
+    @media(max-width: $breakpoint-xl)
+        font-size 40px
+        margin-bottom 80px
+    @media(max-width: $breakpoint-l)
+        font-size 36px
+        margin-bottom 50px
+    @media(max-width: $breakpoint-m)
+        font-size 26px
+        margin-bottom 40px
+    @media(max-width: $breakpoint-s)
+        font-size 22px
+        margin-bottom 20px
+
+.news__company-wrp
+    @media(max-width: $breakpoint-l)
+        display flex
+        flex-direction: column
+
+.news__company-list
+    width 40%
+    display flex
+    flex-direction: column
+    @media(max-width: $breakpoint-xl)
+        width 44%
+    @media(max-width: $breakpoint-l)
+        width 90%
+    @media(max-width: $breakpoint-m)
+        width 100%
+
+.news__company-item
+    width 100%
+    margin-bottom 90px
+    @media(max-width: $breakpoint-xl)
+        margin-bottom 60px
+    @media(max-width: $breakpoint-l)
+        margin-bottom 40px
+        width 70%
+    @media(max-width: $breakpoint-m)
+        width 100%
+        margin-bottom 30px
+
+.news__data
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.23px;
+    @media(max-width: $breakpoint-xl)
+        font-size 13px
+    @media(max-width: $breakpoint-l)
+        font-size 12px
+    @media(max-width: $breakpoint-s)
+        font-size 8px
+.news__name
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.27px;
+    line-height: 1.22;
+    margin-bottom 35px
+    margin-top 15px
+    @media(max-width: $breakpoint-xl)
+        font-size 16px
+        margin-bottom 20px
+        margin-top 10px
+    @media(max-width: $breakpoint-l)
+        font-size 14px
+        margin-bottom 15px
+    @media(max-width: $breakpoint-s)
+        font-size 12px
+        margin-bottom 10px
+        margin-top 5px
+.news__text
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.56;
+    letter-spacing: 0.27px;
+    @media(max-width: $breakpoint-xl)
+        font-size 16px
+    @media(max-width: $breakpoint-l)
+        font-size 14px
+    @media(max-width: $breakpoint-s)
+        font-size 12px
+.news__events
+    padding-left 105px
+    @media(max-width: $breakpoint-xl)
+        padding-left 0
+        flex: 1
+        margin-right 20px
+        display flex
+        justify-content: center
+    @media(max-width: $breakpoint-l)
+        flex: 0
+
+.news__events-wrp
+    @media(max-width: $breakpoint-xl)
+        width 270px
+    @media(max-width: $breakpoint-s)
+        width 100%
+
+.news__event-item
+    width 100%
+    margin-bottom 77px
+     @media(max-width: $breakpoint-xl)
+        margin-bottom 60px
+    @media(max-width: $breakpoint-l)
+        margin-bottom 40px
+    @media(max-width: $breakpoint-m)
+        margin-bottom 30px

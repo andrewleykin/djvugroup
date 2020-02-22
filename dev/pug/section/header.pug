@@ -1,0 +1,14 @@
+header.header
+    .container
+        .header__content
+            .header__logo
+                img.header__logo-img(src=content.header.logo, alt=content.header.alt)
+            .header__menu    
+                ul.header__list
+                    each item in content.header.list
+                        li.header__item
+                            a.header__item-text(href="#")= item['text']
+                .header__search
+                    +icon('search')
+            .header__tel
+                a.header__tel-number(href="#")= content.header.tel

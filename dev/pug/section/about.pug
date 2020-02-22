@@ -1,0 +1,17 @@
+section.about
+    .container
+        .about__content
+            .about__icon
+                img.about__icon-img(src="app/img/content/excavator-icon.png", alt="Эскаватор")
+            h2.about__title= content.about.title
+            ul.about__inf
+                each item in content.about.inf.list
+                    li.about__inf-item
+                        span.about__inf-text= item['text']
+
+        .about__partners
+            ul.about__partners-list
+                each item in content.about.partners.list
+                    li.about__partners-item
+                        a.about__partners-link(href="#")
+                            img.about__partners-img(src=item['src'], alt=item['alt'])
