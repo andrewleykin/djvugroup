@@ -13,5 +13,5 @@ section.about
             ul.about__partners-list
                 each item in content.about.partners.list
                     li.about__partners-item
-                        a.about__partners-link(href="#")
+                        a.about__partners-link(href=item['link'])
                             img.about__partners-img(src=item['src'], alt=item['alt'])

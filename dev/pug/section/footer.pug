@@ -1,8 +1,8 @@
 footer.footer
     .footer__content
-        .footer__logo
+        a.footer__logo(href=content.footer.logoLink)
             img.footer__logo-img(src=content.footer.logo, alt=content.footer.alt)
         .footer__text
-            span.footer__contacts= content.footer.tel
-            span.footer__contacts= content.footer.facs
-            span.footer__contacts= content.footer.mail
+            a.footer__contacts(href="tel:" + content.footer.telLink)= content.footer.tel
+            a.footer__contacts(href="tel:" + content.footer.facsLink)= content.footer.facs
+            a.footer__contacts(href="mailto:" + content.footer.mailLink)= content.footer.mail
