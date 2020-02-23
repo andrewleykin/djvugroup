@@ -1,0 +1,84 @@
+.features
+    background-color: #353c40
+    color: #ffffff
+    padding 104px 0 150px
+    @media(max-width: $breakpoint-xl)
+        padding: 80px 0 120px
+    @media(max-width: $breakpoint-l)
+        padding: 70px 0 100px
+    @media(max-width: $breakpoint-m)
+        padding 60px 0 60px 
+
+.features__list
+    display flex
+    justify-content: space-between
+    @media(max-width: $breakpoint-m)
+        flex-direction: column
+        align-items: center
+
+.features__item
+    width 26%
+    @media(max-width: $breakpoint-l)
+        width 30%
+    @media(max-width: $breakpoint-m)
+        width 80%
+        margin-bottom 40px
+        display flex
+        flex-direction: column
+        align-items center
+        text-align: center
+        &:last-child 
+            margin-bottom 0
+
+.features__img-wrp
+    width 100px
+    height 100px
+    display flex
+    flex-direction: column
+    margin-bottom 55px
+    @media(max-width: $breakpoint-xl)
+        width 90px
+        height 90px
+        margin-bottom 30px
+    @media(max-width: $breakpoint-l)
+        width 80px
+        height 80px
+        margin-bottom 20px
+    @media(max-width: $breakpoint-m)
+        width 70px
+        height 70px
+        margin-bottom 15px
+    & svg 
+        width 100%
+        height 100%
+        fill: #fff
+
+.features__name
+    font-family: 'Montserrat'
+    font-size 30px
+    line-height 1
+    font-weight: 700
+    letter-spacing: 0.75px
+    margin-bottom 30px
+    @media(max-width: $breakpoint-xl)
+        font-size 26px
+        margin-bottom 20px
+    @media(max-width: $breakpoint-l)
+        font-size 22px
+        margin-bottom 15px
+    @media(max-width: $breakpoint-m)
+        font-size 20px
+        margin-bottom 10px
+
+.features__text
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.56;
+    letter-spacing: 0.45px;
+    @media(max-width: $breakpoint-xl)
+        font-size 16px
+    @media(max-width: $breakpoint-l)
+        font-size 12px
+    @media(max-width: $breakpoint-m)
+        font-size 10px
