@@ -1,14 +1,11 @@
 section.hero
-    .container
-        .hero__content
-            .hero__title= content.hero.title
-            a.hero__button-link(href=content.hero.buttonLink)
-                button.hero__button.button Посмотреть всю линейку <br> болотоходов tinger
-        .hero__slider
-            ul.hero__slider-container
-                each item in content.hero.slider
-                    li.hero__slider-item
-                        img.hero__slider-img(src=item['img'], alt=item['alt'])
-        //- ul.hero__pag
-        //-     //- each item in content.hero.slider
-        //-     //-     li.hero__pag-item
+    .hero__slider
+        each item in content.hero.slider
+            .hero__slider-item
+                img.hero__slider-img(src=item['img'], alt=item['alt'])
+                .hero__content
+                    .hero__title= content.hero.title
+                    a.hero__button-link.button(href=content.hero.buttonLink) Посмотреть всю линейку <br> болотоходов tinger                        
+    //- ul.hero__pag
+    //-     each item in content.hero.slider
+    //-         li.hero__pag-item

@@ -52,7 +52,8 @@
         font-size 18px
         line-height 22px
         padding-bottom 10px
-.hero__button
+
+.hero__button-link
     font-size 18px
     font-family: 'Montserrat'
     font-weight: normal
@@ -76,15 +77,10 @@
         line-height 12px
         padding: 8px 15px
         border-radius: 10px
+
 .hero__slider
-    position absolute
-    left 0
-    top 0
     width 100%
     height 100%
-    display flex
-    z-index: -1
-    transition: 0.5s all
 
 .hero__slider-container
     width 100%
@@ -95,11 +91,15 @@
 .hero__slider-item
     width 100%
     height 100%
-    flex-shrink: 0
+    position relative
 
 .hero__slider-img
     width 100%
     height 100%
+    position absolute
+    top 0
+    left 0
+    z-index -1
 
 .hero__pag
     position absolute
@@ -115,58 +115,58 @@
         bottom 14px
     @media(max-width: $breakpoint-s)
         bottom: 8px
-.hero__pag-item
-    width 24px
-    height 24px
-    border-radius: 10px
-    background-color: #ffffff
-    z-index 5
-    margin-right 47px
-    position relative
-    cursor pointer
-    @media(max-width: $breakpoint-xl)
-        width 20px
-        height 20px
-        margin-right 30px
-    @media(max-width: $breakpoint-l)
-        width 18px
-        height 18px
-        margin-right 26px
-    @media(max-width: $breakpoint-m)
-        width 16px
-        height 16px
-        margin-right 20px
-    @media(max-width: $breakpoint-s)
-        width 12px
-        height 12px
-        margin-right 10px
-    &:after
-        content ""
-        position absolute
-        top: 50%
-        left 50%
-        transform: translate(-50%,-50%)
-        width 16px
-        height 16px
-        background-color: #000
-        border-radius: 50%
-        opacity 0
-        transition: 0.2s all
+    li
+        width 24px
+        height 24px
+        border-radius: 10px
+        background-color: #ffffff
+        z-index 5
+        margin-right 47px
+        position relative
+        cursor pointer
         @media(max-width: $breakpoint-xl)
+            width 20px
+            height 20px
+            margin-right 30px
+        @media(max-width: $breakpoint-l)
+            width 18px
+            height 18px
+            margin-right 26px
+        @media(max-width: $breakpoint-m)
+            width 16px
+            height 16px
+            margin-right 20px
+        @media(max-width: $breakpoint-s)
             width 12px
             height 12px
-        @media(max-width: $breakpoint-l)
-            width 10px
-            height 10px
-        @media(max-width: $breakpoint-m)
-            width 8px
-            height 8px
-        @media(max-width: $breakpoint-s)
-            width 6px
-            height 6px
-    &.active
+            margin-right 10px
         &:after
-            opacity 1
-    &:hover 
-        &:after
-            opacity 1
+            content ""
+            position absolute
+            top: 50%
+            left 50%
+            transform: translate(-50%,-50%)
+            width 16px
+            height 16px
+            background-color: #000
+            border-radius: 50%
+            opacity 0
+            transition: 0.2s all
+            @media(max-width: $breakpoint-xl)
+                width 12px
+                height 12px
+            @media(max-width: $breakpoint-l)
+                width 10px
+                height 10px
+            @media(max-width: $breakpoint-m)
+                width 8px
+                height 8px
+            @media(max-width: $breakpoint-s)
+                width 6px
+                height 6px
+        &.slick-active
+            &:after
+                opacity 1
+        &:hover 
+            &:after
+                opacity 1
