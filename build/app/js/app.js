@@ -8,6 +8,14 @@
     }
   })
 })()
+// Открытие\закрытие модалки под меню
+$('.header__burger-menu').on('click', function(){
+  $('.header__menu').addClass('active')
+})
+
+$('.header__burger-close').on('click', function(){
+  $('.header__menu').removeClass('active')
+})
 
 $(document).ready(function () {
     svg4everybody({});
